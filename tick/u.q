@@ -3,9 +3,9 @@
 /2006.05.08 add
 
 \d .u
-init:{(w;t)::(t!();tables`.)}
+init:{w::(t::tables`.)!()}
 
-(del;.z.pc):({w[x]_:w[x;;0]?y};{del[;x]each t})
+del:{w[x]_:w[x;;0]?y};.z.pc:{del[;x]each t};
 
 sel:{(select from x where sym in y;x)`~y}
 
